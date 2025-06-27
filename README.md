@@ -23,8 +23,6 @@ The script uses two external libraries that are **not built-in**. You must insta
 pip install requests beautifulsoup4
 ````
 
----
-
 ## 📁 Installation
 
 1. Clone this repository:
