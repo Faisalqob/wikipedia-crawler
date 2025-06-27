@@ -19,7 +19,7 @@ This Python script recursively crawls Wikipedia articles starting from a given v
 The script uses two external libraries that are **not built-in**. You must install them before running:
 
 ```bash
-pip install requests beautifulsoup4
+pip install requests bs4
 ````
 
 ## 📁 Installation
@@ -44,7 +44,7 @@ pip install requests beautifulsoup4
 Run the script using:
 
 ```bash
-python test.py <wiki-url> <depth> --out <csv|json>
+python SpeerAssessment.py <wiki-url> <depth> --out <csv|json>
 ```
 
 **Arguments**:
@@ -59,13 +59,13 @@ python test.py <wiki-url> <depth> --out <csv|json>
 
 ```bash
 # Crawl Canada Wikipedia article to depth 2, save output as JSON
-python test.py "https://en.wikipedia.org/wiki/Canada" 2 --out json
+python SpeerAssessment.py "https://en.wikipedia.org/wiki/Canada" 2 --out json
 
 # Crawl Python (programming language) article to depth 3, save as CSV
-python test.py "https://en.wikipedia.org/wiki/Python_(programming_language)" 3 --out csv
+python SpeerAssessment.py "https://en.wikipedia.org/wiki/Python_(programming_language)" 3 --out csv
 
 # Invalid URL (will raise error)
-python test.py "https://google.com" 1
+python SpeerAssessment.py "https://google.com" 1
 ```
 
 ---
